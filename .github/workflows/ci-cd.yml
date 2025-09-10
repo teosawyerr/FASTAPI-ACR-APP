@@ -36,4 +36,4 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           docker build -t reprofastapiacr.azurecr.io/fastapi-app:latest .
-          docker push fastapiacr.azurecr.io/fastapi-app:latest
+          docker push reprofastapiacr.azurecr.io/fastapi-app:latest
