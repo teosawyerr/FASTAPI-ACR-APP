@@ -31,9 +31,9 @@ jobs:
           creds: ${{ secrets.FastAPI_AZURE_CREDENTIALS }}
 
       - name: Log in to ACR
-        run: az acr login --name fastapiacr
+        run: az acr login --name reprofastapiacr
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t fastapiacr.azurecr.io/fastapi-app:latest .
+          docker build -t reprofastapiacr.azurecr.io/fastapi-app:latest .
           docker push fastapiacr.azurecr.io/fastapi-app:latest
